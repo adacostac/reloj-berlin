@@ -1,0 +1,11 @@
+.container {
+    display: flex; 
+    padding-bottom: 10px; 
+    padding-top: 10px;
+}
+
+.recuadro {
+    border: 1px solid black; 
+    width: 100px; 
+    height: 100px;
+}
