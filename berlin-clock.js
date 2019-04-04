@@ -4,13 +4,7 @@
     };
 
     var state = {
-        isSecondsVisible: false,
-        elements: [
-            { firstColumn: 0 },
-            { secondColumn: 0, },
-            { thirdColumn: 0, },
-            { fourthColumn: 0 }
-        ]
+        isSecondsVisible: false
     };
 
     var date = {
@@ -27,7 +21,7 @@
         } else {
             date.hour = dateTime.getHours();
         }
-        
+
         date.minute = dateTime.getMinutes();
         date.seconds = dateTime.getSeconds();
 
@@ -69,11 +63,11 @@
             var children = firstColumn.children;
             for (var i = 0; i < state.thirdColumn; i++) {
                 if (i === 2 || i === 5 || i === 8) {
-                    children[i].style.backgroundColor = 'red';   
+                    children[i].style.backgroundColor = 'red';
                 } else {
                     children[i].style.backgroundColor = 'yellow';
                 }
-                
+
             }
         }
     }
