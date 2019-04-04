@@ -22,7 +22,12 @@
     function printDate() {
         var dateTime = new Date();
 
-        date.hour = dateTime.getHours();
+        if (dateTime.getHours() < 5) {
+            date.hour = 0;
+        } else {
+            date.hour = dateTime.getHours();
+        }
+        
         date.minute = dateTime.getMinutes();
         date.seconds = dateTime.getSeconds();
 
